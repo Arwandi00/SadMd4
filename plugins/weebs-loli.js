@@ -7,9 +7,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	let url = res[0].fileUrl
 	conn.sendButton(m.chat, 'Random Image Loli', await shortUrl(url), url, [['Next', usedPrefix + command]], m)
 }
-handler.help = ['loli']
-handler.tags = ['weebs']
-handler.command = /^(loli)$/i
+handler.help = ['l1']
+handler.tags = ['owner']
+handler.command = /^(l)$/i
+handler.owner = true
 
 export default handler
 

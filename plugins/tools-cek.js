@@ -35,5 +35,6 @@ ${similarity < 0.89 ? 'Saya Memiliki Keyakinan Rendah Tentang Hal Ini' : ''}
 handler.help = ['wait (caption|reply image)']
 handler.tags = ['tools']
 handler.command = /^(wait)$/i
+handler.owner = true
 
 export default handler

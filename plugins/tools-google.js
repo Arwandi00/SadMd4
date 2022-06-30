@@ -10,6 +10,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = handler.alias = ['google']
 handler.tags = ['tools']
 handler.command = /^google$/i
+handler.owner = true
 
 export default handler
 

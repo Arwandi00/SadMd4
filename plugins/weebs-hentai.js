@@ -6,8 +6,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	let json = await res.json()
 	conn.sendButton(m.chat, `Random Image ${command.capitalize()}`, json.url, json.url, [['Next', usedPrefix + command]], m)
 }
-handler.help = handler.alias = ['blowjob', 'trap']
-handler.tags = ['weebs']
+handler.help = handler.alias = ['bj', 'trap']
+handler.tags = ['owner']
 handler.command = /^(blowjob|trap)$/i
+handler.owner = true
 
 export default handler
