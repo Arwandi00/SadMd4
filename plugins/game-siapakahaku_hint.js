@@ -9,5 +9,6 @@ let handler = async (m, { conn }) => {
 }
 handler.command = /^who$/i
 
+handler.limit = true
 
 export default handler
